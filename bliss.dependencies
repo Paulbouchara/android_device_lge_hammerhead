@@ -1,0 +1,20 @@
+[
+ {
+   "remote": "cm",
+   "repository": "android_kernel_lge_hammerhead",
+   "branch": "cm-13.0",
+   "target_path": "kernel/lge/hammerheadcaf"
+ },
+ {
+   "remote": "BlissRoms-Devices",
+   "repository": "proprietary_vendor_lge",
+   "branch": "mm6.0",
+   "target_path": "vendor/lge"
+ },
+ {
+   "remote": "cm",
+   "repository": "android_device_qcom_common",
+   "branch": "cm-13.0",
+   "target_path": "device/qcom/common"
+ }
+]
