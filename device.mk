@@ -13,11 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 # This file includes all definitions that apply to ALL hammerhead devices, and
 # are also specific to hammerhead devices
 #
 # Everything in this directory will become public
+
+
+# V4A
+
+BLISS_AUDIO_MOD := viper
 
 
 PRODUCT_COPY_FILES += \
