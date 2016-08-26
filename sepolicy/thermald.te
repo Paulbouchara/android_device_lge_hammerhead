@@ -46,3 +46,9 @@ unix_socket_connect(thermald, mpdecision, mpdecision)
 
 # Access to /dev/msm_thermal_query
 allow thermald thermal_engine_device:chr_file rw_file_perms;
+
+allow thermald sysfs_thermal:dir r_dir_perms;
+allow thermald sysfs_thermal:file rw_file_perms;
+allow thermald sysfs_thermal:lnk_file read;
+
+r_dir_file(thermald, sysfs_ssr)

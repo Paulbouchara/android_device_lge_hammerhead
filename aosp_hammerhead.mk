@@ -19,4 +19,3 @@ PRODUCT_NAME := aosp_hammerhead
 
 PRODUCT_PACKAGES += \
     Launcher3
-

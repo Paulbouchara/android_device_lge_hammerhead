@@ -1,0 +1,14 @@
+allow cameraserver camera:unix_dgram_socket sendto;
+allow cameraserver camera_data_file:sock_file write;
+allow cameraserver camera_socket:sock_file write;
+#allow cameraserver perfd_data_file:dir search;
+#allow cameraserver perfd_data_file:sock_file write;
+#allow cameraserver perfd:unix_stream_socket connectto;
+allow cameraserver scheduling_policy_service:service_manager find;
+
+# Interact with other media devices
+allow cameraserver video_device:dir search;
+allow cameraserver { video_device }:file rw_file_perms;
+allow cameraserver camera_data_file:file rw_file_perms;
+
+allow cameraserver { video_device ion_device }:chr_file read;
