@@ -282,7 +282,7 @@ on property:ro.debuggable=1
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
-    group system
+    group system wakelock
 
 service bridgemgrd /system/bin/bridgemgrd
     class main
@@ -293,7 +293,7 @@ service bridgemgrd /system/bin/bridgemgrd
 service qmuxd /system/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth gps
+    group radio audio bluetooth wakelock gps
 
 service netmgrd /system/bin/netmgrd
     class main
@@ -361,8 +361,8 @@ service bdAddrLoader /system/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -
     oneshot
 
 # bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B \
-        -o /data/data/com.android.shell/files/bugreports/bugreport
+service bugreport /system/bin/dumpstate -d -p -B -z \
+        -o /data/user_de/com.android.shell/files/bugreports/bugreport
     class main
     disabled
     oneshot

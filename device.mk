@@ -19,11 +19,16 @@
 #
 # Everything in this directory will become public
 
+# TARGET_PREBUILT_KERNEL :=
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/lge/hammerhead/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
+
+# PRODUCT_COPY_FILES += \
+    # $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
@@ -380,6 +385,9 @@ GAPPS_VARIANT := micro
 # PRODUCT_PACKAGES += Chrome
 # GAPPS_FORCE_DIALER_OVERRIDES := true
 GAPPS_FORCE_MMS_OVERRIDES := true
+
+# sexy bootanimation
+PRODUCT_COPY_FILES += device/lge/hammerhead/bootanimation.zip:system/media/bootanimation.zip
 
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
