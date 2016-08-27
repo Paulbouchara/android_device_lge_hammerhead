@@ -1,6 +1,8 @@
 allow cameraserver camera:unix_dgram_socket sendto;
 allow cameraserver camera_data_file:sock_file write;
 allow cameraserver scheduling_policy_service:service_manager find;
+allow cameraserver camera_socket:sock_file write;
+allow cameraserver mpdecision_socket:sock_file write;
 
 # Interact with other media devices
 allow cameraserver video_device:dir search;
