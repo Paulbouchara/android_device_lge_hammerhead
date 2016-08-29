@@ -1,7 +1,7 @@
 [
  {
-   "remote": "cm",
-   "repository": "android_kernel_lge_hammerhead",
+   "remote": "github",
+   "repository": "CyanogenMod/android_kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
    "revision": "staging/cm-14.0"
  },
@@ -12,8 +12,8 @@
    "revision": "cm-14.0"
  },
  {
-   "remote": "cm",
-   "repository": "android_device_qcom_common",
+   "remote": "github",
+   "repository": "CyanogenMod/android_device_qcom_common",
    "target_path": "device/qcom/common",
    "revision": "cm-14.0"
  }
