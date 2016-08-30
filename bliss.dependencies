@@ -7,9 +7,9 @@
  },
  {
    "remote": "github",
-   "repository": "TheMuppets/proprietary_vendor_lge",
+   "repository": "aosp-8x74/android_vendor_lge_hammerhead",
    "target_path": "vendor/lge",
-   "revision": "cm-14.0"
+   "revision": "n7.0"
  },
  {
    "remote": "github",
