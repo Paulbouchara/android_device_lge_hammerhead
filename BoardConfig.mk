@@ -164,32 +164,32 @@ USE_MINIKIN := true
 EXTENDED_FONT_FOOTPRINT := true
 
 # Blissful Building Options
-BLISS_BUILD_BLOCK := 1
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_GRAPHITE := true
-BLISS_STRICT := false
-BLISS_KRAIT := true
-FLOOP_NEST_OPTIMIZE := true
-#ENABLE_GCCONLY := true
-BLISS_PIPE := true
-TARGET_ENABLE_UKM := true
-#BLISS_PTHREAD := true
-BLISS_GOMP := true
-BLISS_EXTRAGCC := true
-BLISS_SANITIZE := true
-TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
-FAST_MATH := true
-ENABLE_MODULAR_O3 := true
-#ENABLE_LTO := true
-LINK_TIME_OPTIMIZATIONS := true
-TARGET_USE_ION_COMPAT := true
-TARGET_USE_KRAIT_PLD_SET := true
-#WITH_LZMA_OTA := true
-#TARGET_TC_ROM := 6.1-linaro
-#TARGET_TC_KERNEL := 6.1-linaro
+# BLISS_BUILD_BLOCK := 1
+# BLISSIFY := true
+# BLISS_O3 := true
+# BLISS_GRAPHITE := true
+# BLISS_STRICT := false
+# BLISS_KRAIT := true
+# FLOOP_NEST_OPTIMIZE := true
+# ENABLE_GCCONLY := true
+# BLISS_PIPE := true
+# TARGET_ENABLE_UKM := true
+# BLISS_PTHREAD := true
+# BLISS_GOMP := true
+# BLISS_EXTRAGCC := true
+# BLISS_SANITIZE := true
+# TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+# FAST_MATH := true
+# ENABLE_MODULAR_O3 := true
+# ENABLE_LTO := true
+# LINK_TIME_OPTIMIZATIONS := true
+# TARGET_USE_ION_COMPAT := true
+# TARGET_USE_KRAIT_PLD_SET := true
+# WITH_LZMA_OTA := true
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.8
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 
 #SaberMod
--include vendor/bliss/config/sm.mk
+# -include vendor/bliss/config/sm.mk
