@@ -96,6 +96,10 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 734003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
 BOARD_HAS_FINGERPRINT_FPC := true
@@ -145,3 +149,7 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# BLISS options
+TARGET_TC_ROM := 4.9-sm
+TARGET_TC_KERNEL := 4.9-sm
