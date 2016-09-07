@@ -1,0 +1,14 @@
+[
+ {
+   "remote": "BlissRoms-Kernels",
+   "repository": "android_kernel_lge_hammerhead",
+   "target_path": "kernel/lge/hammerhead",
+   "revision": "n7.0"
+ },
+ {
+   "remote": "BlissRoms-Devices",
+   "repository": "proprietary_vendor_lge_hammerhead",
+   "target_path": "vendor/lge/hammerhead",
+   "revision": "n7.0"
+ }
+]
