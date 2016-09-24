@@ -6,7 +6,7 @@
    "revision": "n7.0"
  },
  {
-   "remote": "BlissRoms-Devices",
+   "remote": "BlissRoms-Vendor",
    "repository": "proprietary_vendor_lge_hammerhead",
    "target_path": "vendor/lge/hammerhead",
    "revision": "n7.0"
