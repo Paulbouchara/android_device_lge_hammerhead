@@ -1,0 +1,8 @@
+[
+ {
+   "repository": "los-hammer/android_kernel_lge_hammerhead",
+   "remote": "github",
+   "branch": "los-15.0",
+   "target_path": "kernel/lge/hammerhead"
+ }
+]
