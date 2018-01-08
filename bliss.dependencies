@@ -2,17 +2,17 @@
  {
    "repository": "BlissRoms-Kernels/android_kernel_lge_hammerhead",
    "remote": "github",
-   "branch": "o8.0-v",
+   "branch": "o8.1",
    "target_path": "kernel/lge/hammerhead"
  },
  {
    "repository": "BlissRoms-Vendor/proprietary_vendor_lge",
    "remote": "github",
-   "branch": "o8.0-ej",
+   "branch": "o8.1",
    "target_path": "vendor/lge"
  },
  {
-   "repository": "BlissRoms/android_hardware_broadcom_wlan",
+   "repository": "BlissRoms/platform_hardware_broadcom_wlan",
    "remote": "github",
    "branch": "o8.0",
    "target_path": "hardware/broadcom/wlan"
