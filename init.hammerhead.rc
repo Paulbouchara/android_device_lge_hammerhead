@@ -119,7 +119,6 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
-
 on post-fs-data
     write /sys/kernel/boot_adsp/boot 1
 

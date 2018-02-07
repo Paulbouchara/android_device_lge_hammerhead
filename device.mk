@@ -133,9 +133,13 @@ PRODUCT_PACKAGES += \
     librs_jni
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.mapper@2.0-impl \
     gralloc.msm8974 \
     libgenlock \
+    android.hardware.graphics.composer@2.1-impl \
     hwcomposer.msm8974 \
+    android.hardware.memtrack@1.0-impl \
     memtrack.msm8974 \
     libqdutils \
     libqdMetaData
@@ -219,6 +223,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     libgps.utils \
     gps.msm8974
 
@@ -270,6 +275,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.use_buffer_age=false \
     ro.hwui.texture_cache_size=72 \
     ro.hwui.layer_cache_size=48 \
     ro.hwui.r_buffer_cache_size=8 \
